@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>خالد أحمد | مسوّق رقمي وصانع محتوى</title>
+  <title>Khaled Ahmed | مسوّق رقمي وصانع محتوى</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -659,7 +659,7 @@
 
   <!-- Navbar -->
   <nav class="navbar" id="navbar">
-    <a href="#" class="logo">خالد أحمد</a>
+    <a href="#" class="logo">Khaled Ahmed</a>
     <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">عنّي</a></li>
@@ -676,7 +676,7 @@
   <section class="hero">
     <div class="hero-content">
       <div class="hero-badge">مسوّق رقمي &bull; صانع محتوى</div>
-      <h1>خالد أحمد</h1>
+      <h1>Khaled Ahmed</h1>
       <h2>Digital Marketer &amp; Content Creator</h2>
       <p>بخبرة عملية في إدارة حملات التواصل الاجتماعي وكتابة وإخراج وتصوير المحتوى. أُحوّل الأفكار إلى محتوى يصل للناس ويؤثر فيهم.</p>
       <div class="hero-tagline">
@@ -954,16 +954,16 @@
           </div>
         </div>
       </div>
-      <form class="contact-form fade-in" id="contactForm" action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" method="POST">
+      <form class="contact-form fade-in" id="contactForm" action="https://formsubmit.co/el/xosizu" method="POST">
         <h3 style="margin-bottom: 1rem;">أرسل رسالة</h3>
-        <input type="hidden" name="_replyto" value="khaled2092002@gmail.com">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
         <input type="hidden" name="_subject" value="رسالة جديدة من موقع خالد أحمد">
         <input type="text" name="name" placeholder="الاسم" required>
         <input type="email" name="email" placeholder="البريد الإلكتروني" required>
         <input type="text" name="subject" placeholder="الموضوع">
         <textarea name="message" placeholder="رسالتك..." required></textarea>
         <button type="submit" class="btn btn-primary" style="width: 100%; margin: 0;"><i class="fas fa-paper-plane"></i> إرسال الرسالة</button>
-        <div id="formStatus" style="display:none; margin-top: 1rem; padding: 0.8rem; border-radius: 10px; text-align: center; font-weight: 600;"></div>
       </form>
     </div>
   </section>
@@ -976,7 +976,7 @@
       <a href="https://drive.google.com/drive/folders/1DF7_XRQm1yi1sH1j15nvZTQQet3ebXuI" target="_blank" title="Google Drive"><i class="fab fa-google-drive"></i></a>
       <a href="https://www.facebook.com/profile.php?id=61557292679605" target="_blank" title="ترجمان"><i class="fab fa-facebook"></i></a>
     </div>
-    <p>&copy; 2026 خالد أحمد — مسوّق رقمي وصانع محتوى. جميع الحقوق محفوظة.</p>
+    <p>&copy; 2026 Khaled Ahmed — مسوّق رقمي وصانع محتوى. جميع الحقوق محفوظة.</p>
   </footer>
 
   <script>
@@ -1008,46 +1008,7 @@
       });
     });
 
-    // Form submission via AJAX
-    const contactForm = document.getElementById('contactForm');
-    const formStatus = document.getElementById('formStatus');
-<form action="https://formsubmit.co/el/xosizu" method="POST">
-    if (contactForm && formStatus) {
-      contactForm.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        const submitBtn = this.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري الإرسال...';
-        submitBtn.disabled = true;
 
-        try {
-          const res = await fetch(this.action, {
-            method: 'POST',
-            body: new FormData(this),
-            headers: { 'Accept': 'application/json' }
-          });
-          if (res.ok) {
-            formStatus.style.display = 'block';
-            formStatus.style.background = 'rgba(39, 174, 96, 0.2)';
-            formStatus.style.color = '#27ae60';
-            formStatus.textContent = '✅ تم إرسال رسالتك بنجاح! سيتم الرد عليك قريباً إن شاء الله.';
-            this.reset();
-          } else {
-            throw new Error('Network response was not ok.');
-          }
-        } catch (err) {
-          formStatus.style.display = 'block';
-          formStatus.style.background = 'rgba(231, 76, 60, 0.2)';
-          formStatus.style.color = '#e74c3c';
-          formStatus.textContent = '❌ حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.';
-        }
-
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-
-        setTimeout(() => { formStatus.style.display = 'none'; }, 5000);
-      });
-    }
   </script>
 
 </body>
