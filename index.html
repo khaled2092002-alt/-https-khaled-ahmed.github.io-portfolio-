@@ -393,6 +393,7 @@
       <li><a href="#experience">الخبرات</a></li>
       <li><a href="#skills">المهارات</a></li>
       <li><a href="#portfolio">أعمالي</a></li>
+       <li><a href="#webdev">تطوير الويب</a></li>
       <li><a href="#videos">الفيديو</a></li>
       <li><a href="#certificates">الشهادات</a></li>
       <li><a href="#contact">تواصل</a></li>
@@ -519,7 +520,190 @@
     <a href="https://www.behance.net/2c360170" target="_blank" rel="noopener" class="btn btn-ghost">كل الأعمال على Behance</a>
   </div>
 </section>
+<!-- ============================================================
+  قسم "تطوير الويب" — الصق الكود ده في ملف الـ index.html بتاعك
+  المكان الصح: قبل <section id="videos"> مباشرة (زي ما طلبت)
+============================================================ -->
 
+<section id="webdev" class="wd-section">
+  <style>
+    .wd-section{
+      --wd-bg:#0d1117;
+      --wd-panel:#141a23;
+      --wd-border:#232c38;
+      --wd-text:#eef1f5;
+      --wd-muted:#8b95a5;
+      --wd-accent:#e8b34d;
+      --wd-accent-soft:rgba(232,179,77,.12);
+      --wd-mono:'JetBrains Mono','Courier New',monospace;
+      background:var(--wd-bg);
+      color:var(--wd-text);
+      padding:96px 24px;
+      direction:rtl;
+      font-family:'Tajawal','Cairo',sans-serif;
+    }
+    .wd-section *{box-sizing:border-box;}
+    .wd-inner{max-width:1080px;margin:0 auto;}
+    .wd-eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      font-family:var(--wd-mono);
+      font-size:13px;letter-spacing:.04em;
+      color:var(--wd-accent);
+      background:var(--wd-accent-soft);
+      border:1px solid rgba(232,179,77,.25);
+      padding:6px 14px;border-radius:20px;
+      margin-bottom:20px;
+    }
+    .wd-heading{
+      font-size:clamp(28px,4vw,40px);
+      font-weight:800;margin:0 0 14px;
+      line-height:1.3;
+    }
+    .wd-sub{
+      color:var(--wd-muted);
+      font-size:16px;line-height:1.9;
+      max-width:640px;margin:0 0 48px;
+    }
+    .wd-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:28px;
+    }
+    .wd-card{
+      background:var(--wd-panel);
+      border:1px solid var(--wd-border);
+      border-radius:14px;
+      overflow:hidden;
+      transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+    .wd-card:hover{
+      transform:translateY(-6px);
+      border-color:rgba(232,179,77,.4);
+      box-shadow:0 20px 40px -20px rgba(0,0,0,.6);
+    }
+    .wd-chrome{
+      display:flex;align-items:center;gap:10px;
+      background:#0a0d12;
+      padding:12px 16px;
+      border-bottom:1px solid var(--wd-border);
+      direction:ltr;
+    }
+    .wd-dots{display:flex;gap:6px;}
+    .wd-dots span{width:10px;height:10px;border-radius:50%;display:block;}
+    .wd-dots span:nth-child(1){background:#ff5f57;}
+    .wd-dots span:nth-child(2){background:#febc2e;}
+    .wd-dots span:nth-child(3){background:#28c840;}
+    .wd-url{
+      font-family:var(--wd-mono);
+      font-size:12px;color:var(--wd-muted);
+      background:#141a23;
+      border-radius:6px;
+      padding:4px 10px;
+      overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+      flex:1;
+    }
+    .wd-body{padding:24px;text-align:right;}
+    .wd-title{font-size:20px;font-weight:800;margin:0 0 10px;}
+    .wd-desc{color:var(--wd-muted);font-size:14.5px;line-height:1.8;margin:0 0 18px;}
+    .wd-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;}
+    .wd-tag{
+      font-family:var(--wd-mono);
+      font-size:11.5px;color:var(--wd-accent);
+      background:var(--wd-accent-soft);
+      border:1px solid rgba(232,179,77,.2);
+      padding:4px 10px;border-radius:6px;
+    }
+    .wd-link{
+      display:inline-flex;align-items:center;gap:6px;
+      color:var(--wd-text);
+      background:transparent;
+      border:1px solid var(--wd-border);
+      padding:9px 16px;border-radius:8px;
+      font-size:14px;font-weight:700;
+      text-decoration:none;
+      transition:background .2s ease, border-color .2s ease;
+    }
+    .wd-link:hover{background:var(--wd-accent-soft);border-color:rgba(232,179,77,.4);color:var(--wd-accent);}
+    .wd-more{
+      margin-top:40px;
+      display:flex;align-items:center;justify-content:space-between;
+      gap:16px;flex-wrap:wrap;
+      background:var(--wd-panel);
+      border:1px dashed var(--wd-border);
+      border-radius:12px;
+      padding:20px 24px;
+    }
+    .wd-more p{margin:0;color:var(--wd-muted);font-size:14px;}
+    @media (max-width:640px){
+      .wd-section{padding:64px 16px;}
+      .wd-more{flex-direction:column;align-items:flex-start;}
+    }
+  </style>
+
+  <div class="wd-inner">
+    <span class="wd-eyebrow">&lt;/&gt; تطوير الويب</span>
+    <h2 class="wd-heading">مشاريعي في تطوير المواقع</h2>
+    <p class="wd-sub">
+      بجانب التسويق وصناعة المحتوى، بصمم وأبني مواقع تعريفية (Landing Pages) لعلامات تجارية ومساحات عمل، من الفكرة للتصميم للتنفيذ.
+    </p>
+
+    <div class="wd-grid">
+
+      <!-- كارت 1: Action Studio -->
+      <article class="wd-card">
+        <div class="wd-chrome">
+          <div class="wd-dots"><span></span><span></span><span></span></div>
+          <div class="wd-url">kai3382172-byte.github.io/actionstudios</div>
+        </div>
+        <div class="wd-body">
+          <h3 class="wd-title">Action Studio</h3>
+          <p class="wd-desc">
+            لاندنج بيدج لاستديو إنتاج محتوى وبودكاست في القاهرة الجديدة، فيها عرض للخدمات، تسعير شفاف، ودعوة مباشرة للحجز عبر واتساب.
+          </p>
+          <div class="wd-tags">
+            <span class="wd-tag">Landing Page</span>
+            <span class="wd-tag">Responsive</span>
+            <span class="wd-tag">HTML / CSS / JS</span>
+          </div>
+          <a class="wd-link" href="https://kai3382172-byte.github.io/actionstudios/" target="_blank" rel="noopener">
+            زيارة الموقع المباشر ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- كارت 2: ICAN -->
+      <article class="wd-card">
+        <div class="wd-chrome">
+          <div class="wd-dots"><span></span><span></span><span></span></div>
+          <div class="wd-url">kai3382172-byte.github.io/Ican</div>
+        </div>
+        <div class="wd-body">
+          <h3 class="wd-title">ICAN</h3>
+          <p class="wd-desc">
+            موقع تعريفي لقاعة محاضرات وتدريب في التجمع الخامس، بيعرض مقارنة أسعار السوق، الباقات، وخطوات الحجز بشكل واضح ومنظم.
+          </p>
+          <div class="wd-tags">
+            <span class="wd-tag">Landing Page</span>
+            <span class="wd-tag">Responsive</span>
+            <span class="wd-tag">HTML / CSS / JS</span>
+          </div>
+          <a class="wd-link" href="https://kai3382172-byte.github.io/Ican/" target="_blank" rel="noopener">
+            زيارة الموقع المباشر ↗
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- رابط ملفات/تصاميم إضافية على Drive -->
+    <div class="wd-more">
+      <p>عايز تشوف تصاميم وملفات إضافية لمشاريع تطوير الويب؟</p>
+      <a class="wd-link" href="https://drive.google.com/drive/folders/1689bQWxWC4-hiWJTHx-QCnyGHnys_ubd?usp=drive_link" target="_blank" rel="noopener">
+        فتح المجلد على Drive ↗
+      </a>
+    </div>
+  </div>
+</section>
 <section id="videos">
   <div class="eyebrow reveal">إنتاج الفيديو</div>
   <h2 class="section-title reveal">أعمالي في الفيديو</h2>
