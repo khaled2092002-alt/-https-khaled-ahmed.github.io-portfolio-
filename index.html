@@ -900,13 +900,7 @@ const cio = new IntersectionObserver((entries)=>{
   });
 },{threshold:0.4});
 counters.forEach(c=>cio.observe(c));
-{
-  "requestStatus": {
-    "statusCode": "INVALID_REQUEST",
-    "statusDescription": "400 BAD_REQUEST \"Required query parameter 'code' is not present.\"",
-    "requestId": "ab673022-2209806"
-  }
-}
+
 /* header shrink */
 window.addEventListener('scroll', ()=>{
   document.querySelector('header').style.padding = window.scrollY > 40 ? '12px 8vw' : '20px 8vw';
