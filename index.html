@@ -7,7 +7,7 @@
 <meta name="description" content="خالد أحمد - مسوّق رقمي وصانع محتوى. إدارة حملات السوشيال ميديا، كتابة وإخراج وتصوير الفيديو، وتصميم الهويات البصرية.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Almarai:wght@300;400;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <meta name="theme-color" content="#080b14">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ar_AR">
@@ -23,7 +23,7 @@
 <link rel="canonical" href="https://khaled2092002-alt.github.io/-https-khaled-ahmed.github.io-portfolio-/">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23080b14'/><text x='32' y='42' font-size='28' font-family='Arial' font-weight='700' text-anchor='middle' fill='%2322d3ee'>KA</text></svg>">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Khaled Ahmed","jobTitle":"Digital Marketer & Content Creator","url":"https://khaled2092002-alt.github.io/-https-khaled-ahmed.github.io-portfolio-/","email":"mailto:khaled2092002@gmail.com","sameAs":["https://www.behance.net/","https://www.linkedin.com/"]}
+{"@context":"https://schema.org","@type":"Person","name":"Khaled Ahmed","alternateName":"خالد أحمد إبراهيم","jobTitle":"Digital Marketing Manager & Content Creator","url":"https://khaled2092002-alt.github.io/-https-khaled-ahmed.github.io-portfolio-/","email":"mailto:khaled2092002@gmail.com","telephone":["+201156766611","+201015793576"],"address":{"@type":"PostalAddress","addressLocality":"Cairo","addressCountry":"EG"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Suez University"},"sameAs":["https://www.behance.net/2c360170","https://www.linkedin.com/in/khaled-ahmed-b1917b228/","https://www.bayt.com/ar/mycvs/"]}
 </script>
 <style>
   :root{
@@ -48,6 +48,9 @@
     overflow-x:hidden;
   }
   h1,h2,h3,h4,.display{font-family:'Tajawal',sans-serif;}
+  html[lang="en"] body{font-family:'Inter',sans-serif;}
+  html[lang="en"] h1,html[lang="en"] h2,html[lang="en"] h3,html[lang="en"] h4,html[lang="en"] .display{font-family:'Inter',sans-serif;letter-spacing:-.01em;}
+  html[lang="en"] .info-item .val{text-align:left;}
   a{color:inherit;text-decoration:none;}
   ul{list-style:none;}
   img{max-width:100%;display:block;}
@@ -69,7 +72,7 @@
 
   /* ---------- NAV ---------- */
   header{
-    position:fixed;top:0;insetInlineStart:0;width:100%;z-index:100;
+    position:fixed;top:0;inset-inline-start:0;width:100%;z-index:100;
     display:flex;align-items:center;justify-content:space-between;
     padding:20px 8vw;backdrop-filter:blur(14px);
     background:rgba(21,21,28,0.65);
@@ -81,10 +84,20 @@
   nav ul{display:flex;gap:34px;}
   nav a{font-size:14px;font-weight:700;color:var(--text-muted);position:relative;padding:4px 0;transition:color .25s;}
   nav a:hover{color:var(--text);}
-  nav a::after{content:"";position:absolute;bottom:-2px;insetInlineStart:0;width:0;height:2px;background:var(--accent);transition:width .3s;}
+  nav a::after{content:"";position:absolute;bottom:-2px;inset-inline-start:0;width:0;height:2px;background:var(--accent);transition:width .3s;}
   nav a:hover::after{width:100%;}
   .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
   .nav-toggle span{width:26px;height:2px;background:var(--text);}
+  .header-actions{display:flex;align-items:center;gap:14px;}
+  .lang-toggle{
+    display:flex;align-items:center;gap:6px;cursor:pointer;
+    background:var(--bg-card);border:1px solid var(--line);color:var(--text);
+    padding:8px 16px;border-radius:100px;font-weight:800;font-size:13px;
+    font-family:'Tajawal',sans-serif;transition:border-color .25s,color .25s,transform .25s;
+  }
+  .lang-toggle:hover{border-color:var(--accent);color:var(--accent-soft);transform:translateY(-2px);}
+  .lang-toggle svg{width:15px;height:15px;}
+  nav ul.open{display:flex !important;}
 
   /* ---------- HERO ---------- */
   .hero{
@@ -168,9 +181,9 @@
     animation:bob 6s ease-in-out infinite;
   }
   .float-card i{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;}
-  .fc-1{top:10px;insetInlineStart:0;animation-delay:0s;}
-  .fc-2{bottom:36px;insetInlineEnd:-10px;animation-delay:-2s;}
-  .fc-3{bottom:0;insetInlineStart:20px;animation-delay:-4s;}
+  .fc-1{top:10px;inset-inline-start:0;animation-delay:0s;}
+  .fc-2{bottom:36px;inset-inline-end:-10px;animation-delay:-2s;}
+  .fc-3{bottom:0;inset-inline-start:20px;animation-delay:-4s;}
   @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
 
   /* filmstrip ticker - signature motif referencing video production */
@@ -182,8 +195,8 @@
   .filmstrip::before,.filmstrip::after{
     content:"";position:absolute;top:0;bottom:0;width:60px;z-index:2;
   }
-  .filmstrip::before{insetInlineStart:0;background:linear-gradient(90deg,var(--bg-soft),transparent);}
-  .filmstrip::after{insetInlineEnd:0;background:linear-gradient(270deg,var(--bg-soft),transparent);}
+  .filmstrip::before{inset-inline-start:0;background:linear-gradient(90deg,var(--bg-soft),transparent);}
+  .filmstrip::after{inset-inline-end:0;background:linear-gradient(270deg,var(--bg-soft),transparent);}
   .ticker-track{display:flex;gap:0;width:max-content;animation:ticker 26s linear infinite;}
   .ticker-track span{
     padding:0 34px;font-size:14px;font-weight:800;letter-spacing:1px;color:var(--text-muted);
@@ -220,18 +233,18 @@
   }
   .about-photo small{color:var(--text-muted);font-size:12px;letter-spacing:1px;}
   .location-chip{
-    position:absolute;bottom:18px;insetInlineStart:18px;display:flex;align-items:center;gap:8px;
+    position:absolute;bottom:18px;inset-inline-start:18px;display:flex;align-items:center;gap:8px;
     background:rgba(21,21,28,.75);backdrop-filter:blur(6px);padding:9px 16px;border-radius:100px;
     font-size:13px;font-weight:700;border:1px solid var(--line);
   }
 
   /* ---------- EXPERIENCE ---------- */
   .timeline{position:relative;padding-inline-start:36px;}
-  .timeline::before{content:"";position:absolute;insetInlineStart:6px;top:6px;bottom:6px;width:2px;background:var(--line);}
+  .timeline::before{content:"";position:absolute;inset-inline-start:6px;top:6px;bottom:6px;width:2px;background:var(--line);}
   .tl-item{position:relative;padding-bottom:50px;}
   .tl-item:last-child{padding-bottom:0;}
   .tl-item::before{
-    content:"";position:absolute;insetInlineStart:-36px;top:4px;width:14px;height:14px;border-radius:50%;
+    content:"";position:absolute;inset-inline-start:-36px;top:4px;width:14px;height:14px;border-radius:50%;
     background:var(--bg);border:3px solid var(--accent);
   }
   .tl-card{
@@ -377,6 +390,13 @@
     .skills-grid,.portfolio-grid,.video-grid{grid-template-columns:repeat(2,1fr);}
     .cert-grid{grid-template-columns:1fr;}
     nav ul{display:none;}
+    nav ul.open{
+      display:flex;flex-direction:column;gap:4px;
+      position:fixed;top:70px;inset-inline-end:6vw;z-index:100;
+      background:#1c1c26;padding:16px 22px;border-radius:14px;
+      border:1px solid rgba(238,241,247,.1);box-shadow:0 20px 40px -14px rgba(0,0,0,.6);
+    }
+    nav ul.open li a{display:block;padding:9px 0;}
     .nav-toggle{display:flex;}
   }
   @media(max-width:640px){
@@ -399,7 +419,7 @@
     box-shadow:0 1px 0 rgba(255,255,255,.08) inset, 0 24px 50px -20px rgba(34,211,238,.25);
   }
   .to-top{
-    position:fixed;bottom:24px;left:24px;z-index:99;
+    position:fixed;bottom:24px;inset-inline-start:24px;z-index:99;
     width:48px;height:48px;border-radius:14px;
     display:flex;align-items:center;justify-content:center;
     background:rgba(34,211,238,.14);color:#22d3ee;
@@ -419,19 +439,26 @@
   <div class="logo">Khaled <span>Ahmed</span></div>
   <nav>
     <ul>
-      <li><a href="#about">عنّي</a></li>
-      <li><a href="#experience">الخبرات</a></li>
-      <li><a href="#skills">المهارات</a></li>
-      <li><a href="#portfolio">أعمالي</a></li>
-       <li><a href="#webdev">تطوير الويب</a></li>
-      <li><a href="#videos">الفيديو</a></li>
-      <li><a href="#certificates">الشهادات</a></li>
-      <li><a href="#contact">تواصل</a></li>
+      <li><a href="#about" data-i18n="nav.about">عنّي</a></li>
+      <li><a href="#experience" data-i18n="nav.experience">الخبرات</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">المهارات</a></li>
+      <li><a href="#portfolio" data-i18n="nav.portfolio">أعمالي</a></li>
+      <li><a href="#webdev" data-i18n="nav.webdev">تطوير الويب</a></li>
+      <li><a href="#videos" data-i18n="nav.videos">الفيديو</a></li>
+      <li><a href="#certificates" data-i18n="nav.certificates">الشهادات</a></li>
+      <li><a href="#education" data-i18n="nav.education">التعليم</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">تواصل</a></li>
     </ul>
   </nav>
-  <button class="nav-toggle" aria-label="القائمة" onclick="document.querySelector('nav ul').style.display = document.querySelector('nav ul').style.display==='flex' ? 'none':'flex'; document.querySelector('nav ul').style.cssText+='flex-direction:column;position:fixed;top:70px;inset-inline-end:6vw;background:#1c1c26;padding:20px 26px;border-radius:14px;border:1px solid rgba(242,239,233,.1);'">
-    <span></span><span></span><span></span>
-  </button>
+  <div class="header-actions">
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 4 6 4 9s-1.5 6.3-4 9c-2.5-2.7-4-6-4-9s1.5-6.3 4-9z"/></svg>
+      <span id="langToggleLabel">EN</span>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="القائمة" aria-expanded="false" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
 <section class="hero" id="top">
@@ -439,13 +466,13 @@
   <div class="blob blob-2"></div>
   <div class="hero-grid">
     <div>
-      <div class="eyebrow reveal in">مسوّق رقمي • صانع محتوى</div>
+      <div class="eyebrow reveal in" data-i18n="hero.eyebrow">مسوّق رقمي • صانع محتوى</div>
       <h1 class="reveal in reveal-delay-1">Khaled <span class="hl">Ahmed</span></h1>
-      <div class="role reveal in reveal-delay-2">Digital Marketer &amp; Content Creator</div>
-      <p class="reveal in reveal-delay-3">بخبرة عملية في إدارة حملات التواصل الاجتماعي وكتابة وإخراج وتصوير المحتوى. أُحوّل الأفكار إلى محتوى يصل للناس ويؤثر فيهم، وأربط بين الإبداع والنتيجة المطلوبة في كل حملة.</p>
+      <div class="role reveal in reveal-delay-2" data-i18n="hero.role">Digital Marketer &amp; Content Creator</div>
+      <p class="reveal in reveal-delay-3" data-i18n="hero.desc">بخبرة عملية في إدارة حملات التواصل الاجتماعي وكتابة وإخراج وتصوير المحتوى. أُحوّل الأفكار إلى محتوى يصل للناس ويؤثر فيهم، وأربط بين الإبداع والنتيجة المطلوبة في كل حملة.</p>
       <div class="cta-row reveal in reveal-delay-4">
-        <a href="#portfolio" class="btn btn-primary">شاهد أعمالي</a>
-        <a href="#contact" class="btn btn-ghost">تواصل معي</a>
+        <a href="#portfolio" class="btn btn-primary" data-i18n="hero.cta1">شاهد أعمالي</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta2">تواصل معي</a>
       </div>
       <div class="social-row reveal in reveal-delay-4">
         <a class="social-pill" href="https://www.behance.net/2c360170" target="_blank" rel="noopener" title="Behance">
@@ -470,9 +497,9 @@
     </div>
     <div class="hero-visual reveal in reveal-delay-2">
       <div class="avatar-ring"><img src="assets/photo1.jpg" alt="Khaled Ahmed" width="640" height="640"></div>
-      <div class="float-card fc-1"><i></i> +20K تفاعل شهري</div>
-      <div class="float-card fc-2"><i></i> إنتاج فيديو</div>
-      <div class="float-card fc-3"><i></i> هوية بصرية</div>
+      <div class="float-card fc-1"><i></i> <span data-i18n="hero.float1">+20K تفاعل شهري</span></div>
+      <div class="float-card fc-2"><i></i> <span data-i18n="hero.float2">إنتاج فيديو</span></div>
+      <div class="float-card fc-3"><i></i> <span data-i18n="hero.float3">هوية بصرية</span></div>
     </div>
   </div>
 
@@ -490,71 +517,43 @@
       </div>
     </div>
     <div class="reveal reveal-delay-1">
-      <div class="eyebrow">نبذة عنّي</div>
-      <h2 class="section-title">مسوّق رقمي وصانع محتوى</h2>
-      <p style="color:var(--text-muted);font-size:16px;">بخبرة عملية في إدارة حملات التواصل الاجتماعي وكتابة وإخراج وتصوير المحتوى. عملت على مشاريع متنوعة في مجال التسويق حققت نتائج ملموسة في الوصول والتفاعل.</p>
-      <p style="color:var(--text-muted);font-size:16px;margin-top:14px;">بقدر أدير العملية كاملة من الفكرة للتنفيذ للنتيجة. من تصميم المنشورات إلى إنتاج الفيديو وإدارة الحملات، كل خطوة بتم بدقة واحترافية. مقيم في <strong style="color:var(--text)">Cairo, Egypt</strong> ومتاح للعمل الحر والمشاريع المستقلة.</p>
-      <blockquote>"أحوّل الأفكار إلى محتوى يصل للناس ويؤثر فيهم، وأربط بين الإبداع والنتيجة المطلوبة في كل حملة"</blockquote>
+      <div class="eyebrow" data-i18n="about.eyebrow">نبذة عنّي</div>
+      <h2 class="section-title" data-i18n="about.title">مسوّق رقمي وصانع محتوى</h2>
+      <p style="color:var(--text-muted);font-size:16px;" data-i18n="about.p1">بخبرة عملية في إدارة حملات التواصل الاجتماعي وكتابة وإخراج وتصوير المحتوى، بمنهجية قائمة على البيانات عبر Meta وGoogle وTikTok وSnapchat. عملت على مشاريع متنوعة في مجال التسويق حققت نتائج ملموسة في الوصول والتفاعل.</p>
+      <p style="color:var(--text-muted);font-size:16px;margin-top:14px;" data-i18n="about.p2">بقدر أدير العملية كاملة من الفكرة للتنفيذ للنتيجة. من الـ SEO والميديا باينج لتصميم المنشورات وإنتاج الفيديو وإدارة الحملات، كل خطوة بتتم بدقة واحترافية. مقيم في <strong style="color:var(--text)">Cairo, Egypt</strong> ومتاح للعمل بدوام كامل والفريلانس.</p>
+      <blockquote data-i18n="about.quote">"أحوّل الأفكار إلى محتوى يصل للناس ويؤثر فيهم، وأربط بين الإبداع والنتيجة المطلوبة في كل حملة"</blockquote>
       <div class="stats-row" style="margin-top:34px;">
-        <div class="stat-box"><div class="stat-num" data-count="20" data-suffix="K+">0</div><div class="stat-label">تفاعل شهري</div></div>
-        <div class="stat-box"><div class="stat-num" data-count="5" data-suffix="+">0</div><div class="stat-label">مشاريع كبرى</div></div>
-        <div class="stat-box"><div class="stat-num" data-count="4" data-suffix="+">0</div><div class="stat-label">سنوات خبرة</div></div>
+        <div class="stat-box"><div class="stat-num" data-count="20" data-suffix="K+">0</div><div class="stat-label" data-i18n="about.stat1">تفاعل شهري</div></div>
+        <div class="stat-box"><div class="stat-num" data-count="5" data-suffix="+">0</div><div class="stat-label" data-i18n="about.stat2">مشاريع كبرى</div></div>
+        <div class="stat-box"><div class="stat-num" data-count="2" data-suffix="+">0</div><div class="stat-label" data-i18n="about.stat3">سنوات خبرة</div></div>
       </div>
     </div>
   </div>
 </section>
 
 <section id="experience">
-  <div class="eyebrow reveal">مسيرتي</div>
-  <h2 class="section-title reveal">الخبرات المهنية</h2>
-  <p class="section-sub reveal">محطات عملت فيها وأثبتت خبرتي في التسويق الرقمي وإنتاج المحتوى</p>
-  <div class="timeline">
-    <div class="tl-item reveal">
-      <div class="tl-card">
-        <h3>مؤسسة العاصم للتنمية</h3>
-        <div class="tl-role">مدير تسويق ومنتج محتوى</div>
-        <p>كنت مسؤول عن إدارة حملات السوشيال ميديا والواتساب ماركتينج بشكل كامل، من التخطيط للتنفيذ. كتبت وأخرجت محتوى فيديو لحملات تسويقية منها <strong>حملة واصلات المياه في المنيا</strong> و<strong>حملة مركز غسيل الكلى</strong>، بالإضافة لتصميم وكتابة المنشورات الترويجية.</p>
-        <p>النتيجة: <strong>وصول عضوي تجاوز 20,000</strong> تفاعل ومشاهدة شهرياً بدون ميزانية إعلانات مدفوعة.</p>
-        <div class="tl-links">
-          <a href="https://www.facebook.com/share/1D6F6TdFZv/" target="_blank" rel="noopener">نموذج من الأعمال ↗</a>
-          <a href="https://www.facebook.com/share/v/nNGxYSnuQ9QqXMxB/" target="_blank" rel="noopener">نموذج محتوى مكتوب ↗</a>
-        </div>
-      </div>
-    </div>
-    <div class="tl-item reveal reveal-delay-1">
-      <div class="tl-card">
-        <h3>صفحة ترجمان</h3>
-        <div class="tl-role">منتج محتوى مرئي ومصوّر</div>
-        <p>عملت على إنتاج وتصوير محتوى فيديو احترافي للصفحة، وشاركت في إخراج فيلم قصير بشكل كامل، مع الحفاظ على هوية بصرية متسقة عبر المنصات.</p>
-        <div class="tl-links">
-          <a href="https://www.facebook.com/profile.php?id=61557292679605" target="_blank" rel="noopener">رابط الصفحة ↗</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="eyebrow reveal" data-i18n="exp.eyebrow">مسيرتي</div>
+  <h2 class="section-title reveal" data-i18n="exp.title">الخبرات المهنية</h2>
+  <p class="section-sub reveal" data-i18n="exp.sub">محطات عملت فيها وأثبتت خبرتي في التسويق الرقمي وإنتاج المحتوى</p>
+  <div class="timeline" id="timeline"></div>
 </section>
 
 <section id="skills">
-  <div class="eyebrow reveal">نقاط القوة</div>
-  <h2 class="section-title reveal">المهارات والخبرات</h2>
-  <p class="section-sub reveal">مجموعة الأدوات والمهارات التي أستخدمها لتحويل الفكرة إلى نتيجة</p>
+  <div class="eyebrow reveal" data-i18n="skills.eyebrow">نقاط القوة</div>
+  <h2 class="section-title reveal" data-i18n="skills.title">المهارات والخبرات</h2>
+  <p class="section-sub reveal" data-i18n="skills.sub">مجموعة الأدوات والمهارات التي أستخدمها لتحويل الفكرة إلى نتيجة</p>
   <div class="skills-grid" id="skills-grid"></div>
 </section>
 
 <section id="portfolio">
-  <div class="eyebrow reveal">معرض الأعمال</div>
-  <h2 class="section-title reveal">أعمالي</h2>
-  <p class="section-sub reveal">نماذج من أعمالي في التصميم الجرافيكي على Behance</p>
+  <div class="eyebrow reveal" data-i18n="portfolio.eyebrow">معرض الأعمال</div>
+  <h2 class="section-title reveal" data-i18n="portfolio.title">أعمالي</h2>
+  <p class="section-sub reveal" data-i18n="portfolio.sub">نماذج من أعمالي في التصميم الجرافيكي على Behance</p>
   <div class="portfolio-grid" id="portfolio-grid"></div>
   <div class="reveal" style="text-align:center;margin-top:44px;">
-    <a href="https://www.behance.net/2c360170" target="_blank" rel="noopener" class="btn btn-ghost">كل الأعمال على Behance</a>
+    <a href="https://www.behance.net/2c360170" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="portfolio.cta">كل الأعمال على Behance</a>
   </div>
 </section>
-<!-- ============================================================
-  قسم "تطوير الويب" — الصق الكود ده في ملف الـ index.html بتاعك
-  المكان الصح: قبل <section id="videos"> مباشرة (زي ما طلبت)
-============================================================ -->
-
 <section id="webdev" class="wd-section">
   <style>
     .wd-section{
@@ -671,9 +670,9 @@
   </style>
 
   <div class="wd-inner">
-    <span class="wd-eyebrow">&lt;/&gt; تطوير الويب</span>
-    <h2 class="wd-heading">مشاريعي في تطوير المواقع</h2>
-    <p class="wd-sub">
+    <span class="wd-eyebrow">&lt;/&gt; <span data-i18n="webdev.eyebrow">تطوير الويب</span></span>
+    <h2 class="wd-heading" data-i18n="webdev.title">مشاريعي في تطوير المواقع</h2>
+    <p class="wd-sub" data-i18n="webdev.sub">
       بجانب التسويق وصناعة المحتوى، بصمم وأبني مواقع تعريفية (Landing Pages) لعلامات تجارية ومساحات عمل، من الفكرة للتصميم للتنفيذ.
     </p>
 
@@ -687,7 +686,7 @@
         </div>
         <div class="wd-body">
           <h3 class="wd-title">Action Studio</h3>
-          <p class="wd-desc">
+          <p class="wd-desc" data-i18n="webdev.card1.desc">
             لاندنج بيدج لاستديو إنتاج محتوى وبودكاست في القاهرة الجديدة، فيها عرض للخدمات، تسعير شفاف، ودعوة مباشرة للحجز عبر واتساب.
           </p>
           <div class="wd-tags">
@@ -695,7 +694,7 @@
             <span class="wd-tag">Responsive</span>
             <span class="wd-tag">HTML / CSS / JS</span>
           </div>
-          <a class="wd-link" href="https://kai3382172-byte.github.io/actionstudios/" target="_blank" rel="noopener">
+          <a class="wd-link" href="https://kai3382172-byte.github.io/actionstudios/" target="_blank" rel="noopener" data-i18n="webdev.visit">
             زيارة الموقع المباشر ↗
           </a>
         </div>
@@ -709,7 +708,7 @@
         </div>
         <div class="wd-body">
           <h3 class="wd-title">ICAN</h3>
-          <p class="wd-desc">
+          <p class="wd-desc" data-i18n="webdev.card2.desc">
             موقع تعريفي لقاعة محاضرات وتدريب في التجمع الخامس، بيعرض مقارنة أسعار السوق، الباقات، وخطوات الحجز بشكل واضح ومنظم.
           </p>
           <div class="wd-tags">
@@ -717,7 +716,7 @@
             <span class="wd-tag">Responsive</span>
             <span class="wd-tag">HTML / CSS / JS</span>
           </div>
-          <a class="wd-link" href="https://kai3382172-byte.github.io/Ican/" target="_blank" rel="noopener">
+          <a class="wd-link" href="https://kai3382172-byte.github.io/Ican/" target="_blank" rel="noopener" data-i18n="webdev.visit">
             زيارة الموقع المباشر ↗
           </a>
         </div>
@@ -727,33 +726,40 @@
 
     <!-- رابط ملفات/تصاميم إضافية على Drive -->
     <div class="wd-more">
-      <p>عايز تشوف تصاميم وملفات إضافية لمشاريع تطوير الويب؟</p>
-      <a class="wd-link" href="https://drive.google.com/drive/folders/1689bQWxWC4-hiWJTHx-QCnyGHnys_ubd?usp=drive_link" target="_blank" rel="noopener">
+      <p data-i18n="webdev.more">عايز تشوف تصاميم وملفات إضافية لمشاريع تطوير الويب؟</p>
+      <a class="wd-link" href="https://drive.google.com/drive/folders/1689bQWxWC4-hiWJTHx-QCnyGHnys_ubd?usp=drive_link" target="_blank" rel="noopener" data-i18n="webdev.drive">
         فتح المجلد على Drive ↗
       </a>
     </div>
   </div>
 </section>
 <section id="videos">
-  <div class="eyebrow reveal">إنتاج الفيديو</div>
-  <h2 class="section-title reveal">أعمالي في الفيديو</h2>
-  <p class="section-sub reveal">أعمالي في إنتاج وتصوير الفيديو والأفلام القصيرة</p>
+  <div class="eyebrow reveal" data-i18n="video.eyebrow">إنتاج الفيديو</div>
+  <h2 class="section-title reveal" data-i18n="video.title">أعمالي في الفيديو</h2>
+  <p class="section-sub reveal" data-i18n="video.sub">أعمالي في إنتاج وتصوير الفيديو والأفلام القصيرة</p>
   <div class="video-grid" id="video-grid"></div>
 </section>
 
 <section id="certificates">
-  <div class="eyebrow reveal">التوثيق</div>
-  <h2 class="section-title reveal">الشهادات والمؤهلات</h2>
-  <p class="section-sub reveal">شهادات ومصادر توثّق مسيرتي المهنية</p>
+  <div class="eyebrow reveal" data-i18n="certs.eyebrow">التوثيق</div>
+  <h2 class="section-title reveal" data-i18n="certs.title">الشهادات والمؤهلات</h2>
+  <p class="section-sub reveal" data-i18n="certs.sub">شهادات ومصادر توثّق مسيرتي المهنية</p>
   <div class="cert-grid" id="cert-grid"></div>
+</section>
+
+<section id="education">
+  <div class="eyebrow reveal" data-i18n="edu.eyebrow">التعليم</div>
+  <h2 class="section-title reveal" data-i18n="edu.title">المؤهل الدراسي</h2>
+  <p class="section-sub reveal" data-i18n="edu.sub">الخلفية الأكاديمية اللي بنيت عليها مسيرتي المهنية</p>
+  <div class="timeline" id="edu-timeline"></div>
 </section>
 
 <section id="contact">
   <div class="contact-grid">
     <div class="reveal">
-      <div class="eyebrow">لنبدأ مشروعك</div>
-      <h2 class="section-title">تواصل معي</h2>
-      <p style="color:var(--text-muted);">مهتم بالتعاون أو عندك مشروع؟ متاح للعمل الحر والمشاريع المستقلة. تواصل معي عبر القنوات التالية:</p>
+      <div class="eyebrow" data-i18n="contact.eyebrow">لنبدأ مشروعك</div>
+      <h2 class="section-title" data-i18n="contact.title">تواصل معي</h2>
+      <p style="color:var(--text-muted);" data-i18n="contact.desc">مهتم بالتعاون أو عندك مشروع؟ متاح للعمل بدوام كامل والفريلانس. تواصل معي عبر القنوات التالية:</p>
       <div class="info-list" id="info-list"></div>
     </div>
     <div class="reveal reveal-delay-1">
@@ -764,31 +770,31 @@
         <input type="text" name="_honey" style="display:none">
         <div class="form-row">
           <div class="field">
-            <label>الاسم</label>
-            <input type="text" name="الاسم" placeholder="اسمك" required>
+            <label data-i18n="contact.name">الاسم</label>
+            <input type="text" name="name" data-i18n-ph="contact.namePh" placeholder="اسمك" required>
           </div>
           <div class="field">
-            <label>البريد الإلكتروني</label>
-            <input type="email" name="البريد الإلكتروني" placeholder="you@email.com" required>
+            <label data-i18n="contact.email">البريد الإلكتروني</label>
+            <input type="email" name="email" placeholder="you@email.com" required>
           </div>
         </div>
         <div class="field full" style="margin-bottom:16px;">
-          <label>الموضوع</label>
-          <input type="text" name="الموضوع" placeholder="عن ماذا تريد التحدث؟">
+          <label data-i18n="contact.subject">الموضوع</label>
+          <input type="text" name="subject" data-i18n-ph="contact.subjectPh" placeholder="عن ماذا تريد التحدث؟">
         </div>
         <div class="field full" style="margin-bottom:6px;">
-          <label>الرسالة</label>
-          <textarea name="الرسالة" placeholder="اكتب رسالتك هنا..." required></textarea>
+          <label data-i18n="contact.message">الرسالة</label>
+          <textarea name="message" data-i18n-ph="contact.messagePh" placeholder="اكتب رسالتك هنا..." required></textarea>
         </div>
-        <button type="submit" class="submit-btn">إرسال الرسالة</button>
-        <p class="form-note">ابعت وهرد عليك في اقرب وقت.</p>
+        <button type="submit" class="submit-btn" data-i18n="contact.send">إرسال الرسالة</button>
+        <p class="form-note" data-i18n="contact.note">ابعت وهرد عليك في اقرب وقت.</p>
       </form>
     </div>
   </div>
 </section>
 
 <footer>
-  <div>© <span id="year"></span> Khaled Ahmed — مسوّق رقمي وصانع محتوى. جميع الحقوق محفوظة.</div>
+  <div>© <span id="year"></span> Khaled Ahmed — <span data-i18n="footer.text">مسوّق رقمي وصانع محتوى. جميع الحقوق محفوظة.</span></div>
   <div class="social-row">
     <a class="social-pill" href="https://www.behance.net/2c360170" target="_blank" rel="noopener" title="Behance" style="width:38px;height:38px;">
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6h7.5a3 3 0 0 1 0 6H2z"/><path d="M2 12h8a3.2 3.2 0 0 1 0 6.4H2z"/><path d="M14.5 14.8a4 4 0 0 0 7.7-1.3c0-2.4-1.8-4.3-4-4.3-2.3 0-4 2-4 4.6 0 2.7 1.8 4.7 4.2 4.7 1.5 0 2.7-.7 3.5-1.8"/><path d="M15 6.2h6"/></svg>
@@ -805,104 +811,324 @@
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
 
-/* ticker content */
-const tickerWords = ["مسوّق رقمي","صانع محتوى","مخرج فيديو","مصمم جرافيك","إدارة سوشيال ميديا","استراتيجية محتوى"];
-const track = document.getElementById('ticker');
-for(let r=0;r<4;r++){
-  tickerWords.forEach(w=>{
-    const s = document.createElement('span');
-    s.innerHTML = `<b>${w}</b>`;
-    track.appendChild(s);
-  });
+/* =========================================================
+   i18n — static text dictionary
+========================================================= */
+const i18n = {
+  ar: {
+    'nav.about':'عنّي','nav.experience':'الخبرات','nav.skills':'المهارات','nav.portfolio':'أعمالي',
+    'nav.webdev':'تطوير الويب','nav.videos':'الفيديو','nav.certificates':'الشهادات','nav.education':'التعليم','nav.contact':'تواصل',
+    'hero.eyebrow':'مسوّق رقمي • صانع محتوى',
+    'hero.role':'Digital Marketer &amp; Content Creator',
+    'hero.desc':'بخبرة عملية في إدارة حملات التواصل الاجتماعي وكتابة وإخراج وتصوير المحتوى. أُحوّل الأفكار إلى محتوى يصل للناس ويؤثر فيهم، وأربط بين الإبداع والنتيجة المطلوبة في كل حملة.',
+    'hero.cta1':'شاهد أعمالي','hero.cta2':'تواصل معي',
+    'hero.float1':'+20K تفاعل شهري','hero.float2':'إنتاج فيديو','hero.float3':'هوية بصرية',
+    'about.eyebrow':'نبذة عنّي','about.title':'مسوّق رقمي وصانع محتوى',
+    'about.p1':'بخبرة عملية في إدارة حملات التواصل الاجتماعي وكتابة وإخراج وتصوير المحتوى، بمنهجية قائمة على البيانات عبر Meta وGoogle وTikTok وSnapchat. عملت على مشاريع متنوعة في مجال التسويق حققت نتائج ملموسة في الوصول والتفاعل.',
+    'about.p2':'بقدر أدير العملية كاملة من الفكرة للتنفيذ للنتيجة. من الـ SEO والميديا باينج لتصميم المنشورات وإنتاج الفيديو وإدارة الحملات، كل خطوة بتتم بدقة واحترافية. مقيم في <strong style="color:var(--text)">Cairo, Egypt</strong> ومتاح للعمل بدوام كامل والفريلانس.',
+    'about.quote':'"أحوّل الأفكار إلى محتوى يصل للناس ويؤثر فيهم، وأربط بين الإبداع والنتيجة المطلوبة في كل حملة"',
+    'about.stat1':'تفاعل شهري','about.stat2':'مشاريع كبرى','about.stat3':'سنوات خبرة',
+    'exp.eyebrow':'مسيرتي','exp.title':'الخبرات المهنية','exp.sub':'محطات عملت فيها وأثبتت خبرتي في التسويق الرقمي وإنتاج المحتوى',
+    'skills.eyebrow':'نقاط القوة','skills.title':'المهارات والخبرات','skills.sub':'مجموعة الأدوات والمهارات التي أستخدمها لتحويل الفكرة إلى نتيجة',
+    'portfolio.eyebrow':'معرض الأعمال','portfolio.title':'أعمالي','portfolio.sub':'نماذج من أعمالي في التصميم الجرافيكي على Behance','portfolio.cta':'كل الأعمال على Behance',
+    'webdev.eyebrow':'تطوير الويب','webdev.title':'مشاريعي في تطوير المواقع',
+    'webdev.sub':'بجانب التسويق وصناعة المحتوى، بصمم وأبني مواقع تعريفية (Landing Pages) لعلامات تجارية ومساحات عمل، من الفكرة للتصميم للتنفيذ.',
+    'webdev.card1.desc':'لاندنج بيدج لاستديو إنتاج محتوى وبودكاست في القاهرة الجديدة، فيها عرض للخدمات، تسعير شفاف، ودعوة مباشرة للحجز عبر واتساب.',
+    'webdev.card2.desc':'موقع تعريفي لقاعة محاضرات وتدريب في التجمع الخامس، بيعرض مقارنة أسعار السوق، الباقات، وخطوات الحجز بشكل واضح ومنظم.',
+    'webdev.visit':'زيارة الموقع المباشر ↗','webdev.more':'عايز تشوف تصاميم وملفات إضافية لمشاريع تطوير الويب؟','webdev.drive':'فتح المجلد على Drive ↗',
+    'video.eyebrow':'إنتاج الفيديو','video.title':'أعمالي في الفيديو','video.sub':'أعمالي في إنتاج وتصوير الفيديو والأفلام القصيرة',
+    'certs.eyebrow':'التوثيق','certs.title':'الشهادات والمؤهلات','certs.sub':'شهادات ومصادر توثّق مسيرتي المهنية',
+    'edu.eyebrow':'التعليم','edu.title':'المؤهل الدراسي','edu.sub':'الخلفية الأكاديمية اللي بنيت عليها مسيرتي المهنية',
+    'contact.eyebrow':'لنبدأ مشروعك','contact.title':'تواصل معي','contact.desc':'مهتم بالتعاون أو عندك مشروع؟ متاح للعمل بدوام كامل والفريلانس. تواصل معي عبر القنوات التالية:',
+    'contact.name':'الاسم','contact.namePh':'اسمك','contact.email':'البريد الإلكتروني','contact.subject':'الموضوع','contact.subjectPh':'عن ماذا تريد التحدث؟',
+    'contact.message':'الرسالة','contact.messagePh':'اكتب رسالتك هنا...','contact.send':'إرسال الرسالة','contact.note':'ابعت وهرد عليك في اقرب وقت.',
+    'footer.text':'مسوّق رقمي وصانع محتوى. جميع الحقوق محفوظة.',
+  },
+  en: {
+    'nav.about':'About','nav.experience':'Experience','nav.skills':'Skills','nav.portfolio':'Portfolio',
+    'nav.webdev':'Web Dev','nav.videos':'Video','nav.certificates':'Certificates','nav.education':'Education','nav.contact':'Contact',
+    'hero.eyebrow':'Digital Marketer • Content Creator',
+    'hero.role':'Digital Marketer &amp; Content Creator',
+    'hero.desc':'Results-driven Digital Marketing Manager and Content Creator with 2+ years of hands-on experience planning and executing data-informed campaigns across Meta, Google, TikTok and Snapchat. I turn ideas into content that reaches people and moves them.',
+    'hero.cta1':'View my work','hero.cta2':'Get in touch',
+    'hero.float1':'+20K monthly reach','hero.float2':'Video production','hero.float3':'Visual identity',
+    'about.eyebrow':'About me','about.title':'Digital Marketer & Content Creator',
+    'about.p1':'Hands-on experience managing social media campaigns and writing, directing and shooting content, with a data-informed approach across Meta, Google, TikTok and Snapchat. I&#39;ve worked on a variety of marketing projects that delivered measurable reach and engagement.',
+    'about.p2':'I can own the full pipeline from idea to execution to results — from SEO and media buying to post design, video production and campaign management, each step handled with precision. Based in <strong style="color:var(--text)">Cairo, Egypt</strong> and open to full-time and freelance opportunities.',
+    'about.quote':'"I turn ideas into content that reaches people and moves them, connecting creativity with the result every campaign needs."',
+    'about.stat1':'Monthly reach','about.stat2':'Major projects','about.stat3':'Years experience',
+    'exp.eyebrow':'My journey','exp.title':'Professional Experience','exp.sub':'Places I&#39;ve worked that shaped my expertise in digital marketing and content production',
+    'skills.eyebrow':'Strengths','skills.title':'Skills & Expertise','skills.sub':'The tools and skills I use to turn an idea into a result',
+    'portfolio.eyebrow':'Portfolio','portfolio.title':'My Work','portfolio.sub':'Selected graphic design work on Behance','portfolio.cta':'See all work on Behance',
+    'webdev.eyebrow':'Web Development','webdev.title':'My Web Development Projects',
+    'webdev.sub':'Alongside marketing and content creation, I design and build landing pages for brands and workspaces — from idea to design to build.',
+    'webdev.card1.desc':'A landing page for a content and podcast studio in New Cairo, showcasing services, transparent pricing, and a direct WhatsApp booking call-to-action.',
+    'webdev.card2.desc':'A landing page for a lecture and training hall in Fifth Settlement, presenting a clear market price comparison, packages, and booking steps.',
+    'webdev.visit':'Visit live site ↗','webdev.more':'Want to see more designs and files from my web projects?','webdev.drive':'Open the Drive folder ↗',
+    'video.eyebrow':'Video Production','video.title':'My Video Work','video.sub':'Video production and short-film work I&#39;ve directed and shot',
+    'certs.eyebrow':'Credentials','certs.title':'Certificates & Qualifications','certs.sub':'Certificates and sources documenting my professional journey',
+    'edu.eyebrow':'Education','edu.title':'Academic Background','edu.sub':'The academic foundation my career is built on',
+    'contact.eyebrow':'Let&#39;s start your project','contact.title':'Get in Touch','contact.desc':'Interested in collaborating or have a project in mind? Open to full-time and freelance work. Reach me through the channels below:',
+    'contact.name':'Name','contact.namePh':'Your name','contact.email':'Email','contact.subject':'Subject','contact.subjectPh':'What would you like to discuss?',
+    'contact.message':'Message','contact.messagePh':'Write your message here...','contact.send':'Send Message','contact.note':'Send it and I&#39;ll get back to you as soon as possible.',
+    'footer.text':'Digital Marketer & Content Creator. All rights reserved.',
+  }
+};
+
+function t(key){ return i18n[currentLang][key] ?? i18n.ar[key] ?? key; }
+
+/* =========================================================
+   Dynamic bilingual content (rendered per language)
+========================================================= */
+const tickerWords = {
+  ar:["مسوّق رقمي","صانع محتوى","مخرج فيديو","مصمم جرافيك","إدارة سوشيال ميديا","استراتيجية محتوى","SEO","ميديا باينج"],
+  en:["Digital Marketer","Content Creator","Videographer","Graphic Designer","Social Media Management","Content Strategy","SEO","Media Buying"]
+};
+
+const skillsData = {
+  ar:[
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V6a2 2 0 0 1 2-2h9l5 5v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M14 4v5h5"/><path d="M8 13h8M8 17h5"/></svg>', title:'استراتيجية المحتوى', desc:'تخطيط حملات تسويقية، كتابة سكريبتات وبوستات احترافية'},
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>', title:'التسويق الرقمي', desc:'إدارة حملات فيسبوك، واتساب ماركتينج، نمو عضوي'},
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-7-7 18-3-8z"/></svg>', title:'الميديا باينج', desc:'إدارة إعلانات Meta وGoogle وTikTok وSnapchat واستهداف الجمهور'},
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>', title:'SEO وتحسين محركات البحث', desc:'تحسين الظهور في نتائج البحث وزيادة الوصول العضوي'},
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg>', title:'الإنتاج البصري', desc:'تصوير وإخراج فيديوهات ترويجية وأفلام قصيرة'},
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21v-5l12-12 5 5-12 12z"/><path d="M13 6l5 5"/></svg>', title:'التصميم الجرافيكي', desc:'تصميم هويات بصرية ومنشورات احترافية'},
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>', title:'التسويق عبر البريد الإلكتروني', desc:'حملات إيميل ماركتينج مبنية على تحليل الجمهور'},
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3 2.5-5 5-5s5 2 5 5"/><path d="M14 20c0-2.3 1.6-4 4-4s4 1.7 4 4"/></svg>', title:'إدارة المجتمع', desc:'تنمية الجمهور وزيادة التفاعل وبناء مجتمعات رقمية'},
+  ],
+  en:[
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V6a2 2 0 0 1 2-2h9l5 5v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M14 4v5h5"/><path d="M8 13h8M8 17h5"/></svg>', title:'Content Strategy', desc:'Marketing campaign planning, professional scripts and posts'},
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>', title:'Digital Marketing', desc:'Facebook campaign management, WhatsApp marketing, organic growth'},
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-7-7 18-3-8z"/></svg>', title:'Media Buying', desc:'Meta, Google, TikTok & Snapchat ad management and audience targeting'},
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>', title:'SEO / SEM', desc:'Improving search visibility and growing organic reach'},
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg>', title:'Visual Production', desc:'Shooting and directing promotional videos and short films'},
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21v-5l12-12 5 5-12 12z"/><path d="M13 6l5 5"/></svg>', title:'Graphic Design', desc:'Brand visual identities and professional social posts'},
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>', title:'Email Marketing', desc:'Audience-driven email marketing campaigns'},
+    {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3 2.5-5 5-5s5 2 5 5"/><path d="M14 20c0-2.3 1.6-4 4-4s4 1.7 4 4"/></svg>', title:'Community Management', desc:'Growing audiences and building digital communities'},
+  ]
+};
+
+const experienceData = {
+  ar:[
+    {org:'مؤسسة العاصم للتنمية', role:'مدير تسويق ومنتج محتوى', period:'سبتمبر 2024 — حتى الآن',
+      body:'مسؤول عن إدارة حملات السوشيال ميديا والواتساب ماركتينج بشكل كامل من التخطيط للتنفيذ. بنيت استراتيجيات ترويجية متعددة القنوات شملت محتوى SEO وإيميل ماركتينج وإعلانات مدفوعة (PPC)، وكتبت وأخرجت محتوى فيديو لحملات منها <strong>حملة واصلات المياه في المنيا</strong> و<strong>حملة مركز غسيل الكلى</strong>.',
+      result:'النتيجة: <strong>وصول عضوي تجاوز 20,000</strong> تفاعل ومشاهدة شهرياً بدون ميزانية إعلانات مدفوعة.',
+      links:[{label:'نموذج من الأعمال ↗', href:'https://www.facebook.com/share/1D6F6TdFZv/'},{label:'نموذج محتوى مكتوب ↗', href:'https://www.facebook.com/share/v/nNGxYSnuQ9QqXMxB/'}]},
+    {org:'صفحة ترجمان', role:'كاتب محتوى ومصوّر', period:'فبراير 2024 — يونيو 2024',
+      body:'كتبت مقالات ومنشورات متوافقة مع هوية البراند لعدة منصات رقمية، ونفذت مشاريع فيديو كاملة من الفكرة للتنفيذ للمونتاج، وشاركت في إخراج فيلم قصير بشكل كامل، مع الحفاظ على هوية بصرية متسقة عبر المنصات.',
+      result:null,
+      links:[{label:'رابط الصفحة ↗', href:'https://www.facebook.com/profile.php?id=61557292679605'}]},
+  ],
+  en:[
+    {org:'Al-Aasem Foundation for Development', role:'Marketing Manager & Content Producer', period:'Sep 2024 — Present',
+      body:'Led end-to-end social media and WhatsApp marketing campaigns from planning to execution. Built multi-channel promotional strategies spanning SEO-optimized content, email marketing and paid social (PPC), and wrote/directed video content for campaigns including a <strong>rural water-access campaign in Minya</strong> and a <strong>kidney dialysis center campaign</strong>.',
+      result:'Result: <strong>organic reach exceeding 20,000</strong> monthly interactions and views with zero paid ad budget.',
+      links:[{label:'Work sample ↗', href:'https://www.facebook.com/share/1D6F6TdFZv/'},{label:'Written content sample ↗', href:'https://www.facebook.com/share/v/nNGxYSnuQ9QqXMxB/'}]},
+    {org:'Torjoman', role:'Content Writer & Videographer', period:'Feb 2024 — Jun 2024',
+      body:'Produced articles, blog posts and social copy aligned with brand voice across multiple digital platforms, delivered full-cycle videography projects from concept to post-production, and helped direct a short film in full — maintaining consistent visual identity across touchpoints.',
+      result:null,
+      links:[{label:'Page link ↗', href:'https://www.facebook.com/profile.php?id=61557292679605'}]},
+  ]
+};
+
+const eduData = {
+  ar:[
+    {org:'جامعة السويس', role:'بكالوريوس الإعلام وتكنولوجيا الاتصال', period:'يونيو 2024', body:'دراسة أكاديمية في الإعلام وتكنولوجيا الاتصال، شملت أساسيات صناعة المحتوى والاتصال الجماهيري.', result:null, links:[]},
+    {org:'دبلومات مهنية', role:'التسويق الاستراتيجي • التسويق الرقمي (وكالة أنباء الشرق الأوسط) • تسويق الأعمال (أكاديمية Galaxy)', period:'تطوير مهني مستمر', body:'مجموعة دبلومات متخصصة في التسويق الاستراتيجي والرقمي وتسويق الأعمال، دعمت مسيرتي العملية بأساس نظري قوي.', result:null, links:[]},
+  ],
+  en:[
+    {org:'Suez University', role:'B.Sc. Mass Communication & Communication Technology', period:'June 2024', body:'Academic study in mass communication and communication technology, covering the fundamentals of content production and public communication.', result:null, links:[]},
+    {org:'Professional Diplomas', role:'Strategic Marketing • Digital Marketing (Middle East News Agency) • Business Marketing (Galaxy Academy)', period:'Continuous professional development', body:'A set of specialized diplomas in strategic and digital marketing and business marketing, backing up hands-on experience with strong theoretical grounding.', result:null, links:[]},
+  ]
+};
+
+const worksData = {
+  ar:[
+    {title:'تصميم لمطاحن حبات البن', tag:'هوية بصرية', link:'https://www.behance.net/gallery/248943631/_'},
+    {title:'نيو اكاديمي', tag:'هوية تعليمية', link:'https://www.behance.net/gallery/242488055/_'},
+    {title:'B.E. Store', tag:'هوية متجر إلكتروني', link:'https://www.behance.net/gallery/231762911/BE-Store'},
+    {title:'حبات البن', tag:'هوية براند', link:'https://www.behance.net/gallery/231761163/_'},
+    {title:'مشروع تمكن', tag:'هوية مشروع تطويري', link:'https://www.behance.net/gallery/231760097/_'},
+  ],
+  en:[
+    {title:'Coffee Beans Mill Design', tag:'Visual identity', link:'https://www.behance.net/gallery/248943631/_'},
+    {title:'New Academy', tag:'Educational identity', link:'https://www.behance.net/gallery/242488055/_'},
+    {title:'B.E. Store', tag:'E-commerce identity', link:'https://www.behance.net/gallery/231762911/BE-Store'},
+    {title:'Habbat Elbon', tag:'Brand identity', link:'https://www.behance.net/gallery/231761163/_'},
+    {title:'Tamakon Project', tag:'Development project identity', link:'https://www.behance.net/gallery/231760097/_'},
+  ]
+};
+
+const videosData = {
+  ar:[
+    {title:'الفيلم القصير', desc:'فيلم قصير من إخراجي بالكامل', link:'https://www.facebook.com/share/p/4KT8ejBD6C9z2cdq/'},
+    {title:'فيلم ٢٤ ساعة', desc:'فيلم وثائقي قصير', link:'https://drive.google.com/file/d/1tVTL8yZMelcyoll1YvpzzbxOqqyhuUYt/view'},
+    {title:'حبات البن', desc:'فيديو ترويجي لمشروع حبات البن', link:'https://www.facebook.com/share/r/1KAD1YyFJK/'},
+  ],
+  en:[
+    {title:'Short Film', desc:'A short film I directed in full', link:'https://www.facebook.com/share/p/4KT8ejBD6C9z2cdq/'},
+    {title:'24 Hour Film', desc:'Short documentary film', link:'https://drive.google.com/file/d/1tVTL8yZMelcyoll1YvpzzbxOqqyhuUYt/view'},
+    {title:'Habbat Elbon', desc:'Promotional video for the Habbat Elbon project', link:'https://www.facebook.com/share/r/1KAD1YyFJK/'},
+  ]
+};
+
+const certsData = {
+  ar:[
+    {title:'دبلوم التسويق الاستراتيجي', desc:'شهادة متخصصة في تخطيط وتنفيذ استراتيجيات التسويق', link:'https://drive.google.com/drive/folders/11F7t5NabjepguMxQlREWy7P6HyziWtu5?usp=drive_link'},
+    {title:'دبلوم التسويق الرقمي — وكالة أنباء الشرق الأوسط (MENA)', desc:'دبلوم معتمد في أساسيات وأدوات التسويق الرقمي', link:'https://drive.google.com/drive/folders/11F7t5NabjepguMxQlREWy7P6HyziWtu5?usp=drive_link'},
+    {title:'دبلوم تسويق الأعمال — أكاديمية Galaxy', desc:'دبلوم في تسويق الأعمال وتطوير العلامات التجارية', link:'https://drive.google.com/drive/folders/11F7t5NabjepguMxQlREWy7P6HyziWtu5?usp=drive_link'},
+    {title:'ملف الأعمال الكامل', desc:'جميع المشاريع والأعمال والشهادات على Google Drive', link:'https://drive.google.com/drive/folders/1DF7_XRQm1yi1sH1j15nvZTQQet3ebXuI'},
+  ],
+  en:[
+    {title:'Diploma in Strategic Marketing', desc:'Specialized certification in marketing strategy planning and execution', link:'https://drive.google.com/drive/folders/11F7t5NabjepguMxQlREWy7P6HyziWtu5?usp=drive_link'},
+    {title:'Diploma in Digital Marketing — Middle East News Agency (MENA)', desc:'Accredited diploma covering digital marketing fundamentals and tools', link:'https://drive.google.com/drive/folders/11F7t5NabjepguMxQlREWy7P6HyziWtu5?usp=drive_link'},
+    {title:'Diploma in Business Marketing — Galaxy Academy', desc:'Diploma in business marketing and brand development', link:'https://drive.google.com/drive/folders/11F7t5NabjepguMxQlREWy7P6HyziWtu5?usp=drive_link'},
+    {title:'Full Portfolio Archive', desc:'All projects, work samples and certificates on Google Drive', link:'https://drive.google.com/drive/folders/1DF7_XRQm1yi1sH1j15nvZTQQet3ebXuI'},
+  ]
+};
+
+const infosData = {
+  ar:[
+    {label:'الموقع', value:'Cairo, Egypt', href:null, icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.6 7-11.5A7 7 0 0 0 5 9.5C5 14.4 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>'},
+    {label:'الهاتف', value:'01156766611', href:'tel:+201156766611', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>'},
+    {label:'الهاتف', value:'01015793576', href:'tel:+201015793576', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>'},
+    {label:'البريد الإلكتروني', value:'khaled2092002@gmail.com', href:'mailto:khaled2092002@gmail.com', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>'},
+    {label:'Behance', value:'@2c360170', href:'https://www.behance.net/2c360170', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6h7.5a3 3 0 0 1 0 6H2z"/><path d="M2 12h8a3.2 3.2 0 0 1 0 6.4H2z"/></svg>'},
+    {label:'LinkedIn', value:'khaled-ahmed', href:'https://www.linkedin.com/in/khaled-ahmed-b1917b228/', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.97V21H9z"/></svg>'},
+    {label:'السيرة الذاتية', value:'بيت (Bayt.com)', href:'https://www.bayt.com/ar/mycvs/', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7"/></svg>'},
+  ],
+  en:[
+    {label:'Location', value:'Cairo, Egypt', href:null, icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.6 7-11.5A7 7 0 0 0 5 9.5C5 14.4 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>'},
+    {label:'Phone', value:'+20 115 676 6611', href:'tel:+201156766611', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>'},
+    {label:'Phone', value:'+20 101 579 3576', href:'tel:+201015793576', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>'},
+    {label:'Email', value:'khaled2092002@gmail.com', href:'mailto:khaled2092002@gmail.com', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>'},
+    {label:'Behance', value:'@2c360170', href:'https://www.behance.net/2c360170', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6h7.5a3 3 0 0 1 0 6H2z"/><path d="M2 12h8a3.2 3.2 0 0 1 0 6.4H2z"/></svg>'},
+    {label:'LinkedIn', value:'khaled-ahmed', href:'https://www.linkedin.com/in/khaled-ahmed-b1917b228/', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.97V21H9z"/></svg>'},
+    {label:'Resume / CV', value:'Bayt.com', href:'https://www.bayt.com/ar/mycvs/', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7"/></svg>'},
+  ]
+};
+
+/* =========================================================
+   Render functions
+========================================================= */
+function renderTicker(){
+  const track = document.getElementById('ticker');
+  track.innerHTML = '';
+  for(let r=0;r<4;r++){
+    tickerWords[currentLang].forEach(w=>{
+      const s = document.createElement('span');
+      s.innerHTML = `<b>${w}</b>`;
+      track.appendChild(s);
+    });
+  }
+}
+function renderSkills(){
+  document.getElementById('skills-grid').innerHTML = skillsData[currentLang].map((s,i)=>`
+    <div class="skill-card reveal in reveal-delay-${(i%4)+1}">
+      <div class="skill-icon">${s.icon}</div>
+      <h4>${s.title}</h4>
+      <p>${s.desc}</p>
+    </div>`).join('');
+}
+function renderTimeline(){
+  document.getElementById('timeline').innerHTML = experienceData[currentLang].map((e,i)=>`
+    <div class="tl-item reveal in reveal-delay-${i+1}">
+      <div class="tl-card">
+        <h3>${e.org}</h3>
+        <div class="tl-role">${e.role} · ${e.period}</div>
+        <p>${e.body}</p>
+        ${e.result ? `<p>${e.result}</p>` : ''}
+        <div class="tl-links">${e.links.map(l=>`<a href="${l.href}" target="_blank" rel="noopener">${l.label}</a>`).join('')}</div>
+      </div>
+    </div>`).join('');
+}
+function renderEdu(){
+  document.getElementById('edu-timeline').innerHTML = eduData[currentLang].map((e,i)=>`
+    <div class="tl-item reveal in reveal-delay-${i+1}">
+      <div class="tl-card">
+        <h3>${e.org}</h3>
+        <div class="tl-role">${e.role} · ${e.period}</div>
+        <p>${e.body}</p>
+      </div>
+    </div>`).join('');
+}
+function renderPortfolio(){
+  document.getElementById('portfolio-grid').innerHTML = worksData[currentLang].map((w,i)=>`
+    <a class="p-card reveal in reveal-delay-${(i%4)+1}" href="${w.link}" target="_blank" rel="noopener">
+      <div class="p-bg">${w.title}</div>
+      <div class="p-overlay">
+        <h4>${w.title}</h4>
+        <span>${w.tag}</span>
+        <span class="view">${currentLang==='ar'?'مشاهدة على Behance ↗':'View on Behance ↗'}</span>
+      </div>
+    </a>`).join('');
+}
+function renderVideos(){
+  document.getElementById('video-grid').innerHTML = videosData[currentLang].map((v,i)=>`
+    <a class="v-card reveal in reveal-delay-${(i%4)+1}" href="${v.link}" target="_blank" rel="noopener">
+      <div class="v-thumb"><div class="play-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      </div></div>
+      <div class="v-body"><h4>${v.title}</h4><p>${v.desc}</p></div>
+    </a>`).join('');
+}
+function renderCerts(){
+  document.getElementById('cert-grid').innerHTML = certsData[currentLang].map((c,i)=>`
+    <div class="cert-card reveal in reveal-delay-${i+1}">
+      <div class="cert-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.8 7.1 18.2l.9-5.5-4-3.9 5.5-.8z"/></svg></div>
+      <div>
+        <h4>${c.title}</h4>
+        <p>${c.desc}</p>
+        <a href="${c.link}" target="_blank" rel="noopener">${currentLang==='ar'?'فتح الرابط ↗':'Open link ↗'}</a>
+      </div>
+    </div>`).join('');
+}
+function renderInfo(){
+  document.getElementById('info-list').innerHTML = infosData[currentLang].map((it,i)=>{
+    const inner = `<div class="info-icon">${it.icon}</div><div><div class="lbl">${it.label}</div><div class="val">${it.value}</div></div>`;
+    return it.href ? `<a class="info-item reveal in reveal-delay-${(i%4)+1}" href="${it.href}" target="_blank" rel="noopener">${inner}</a>`
+                    : `<div class="info-item reveal in reveal-delay-${(i%4)+1}">${inner}</div>`;
+  }).join('');
 }
 
-/* skills data */
-const skills = [
-  {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V6a2 2 0 0 1 2-2h9l5 5v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M14 4v5h5"/><path d="M8 13h8M8 17h5"/></svg>', title:'استراتيجية المحتوى', desc:'تخطيط حملات تسويقية، كتابة سكريبتات وبوستات احترافية'},
-  {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>', title:'التسويق الرقمي', desc:'إدارة حملات فيسبوك، واتساب ماركتينج، نمو عضوي'},
-  {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg>', title:'الإنتاج البصري', desc:'تصوير وإخراج فيديوهات ترويجية وأفلام قصيرة'},
-  {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21v-5l12-12 5 5-12 12z"/><path d="M13 6l5 5"/></svg>', title:'التصميم الجرافيكي', desc:'تصميم هويات بصرية ومنشورات احترافية'},
-  {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3 2.5-5 5-5s5 2 5 5"/><path d="M14 20c0-2.3 1.6-4 4-4s4 1.7 4 4"/></svg>', title:'إدارة المجتمع', desc:'تنمية الجمهور وزيادة التفاعل وبناء مجتمعات رقمية'},
-  {icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>', title:'SEO وتحسين محركات البحث', desc:'تحسين الظهور في نتائج البحث وزيادة الوصول العضوي'},
-];
-document.getElementById('skills-grid').innerHTML = skills.map((s,i)=>`
-  <div class="skill-card reveal reveal-delay-${(i%4)+1}">
-    <div class="skill-icon">${s.icon}</div>
-    <h4>${s.title}</h4>
-    <p>${s.desc}</p>
-  </div>`).join('');
+/* =========================================================
+   Language switching
+========================================================= */
+let currentLang = localStorage.getItem('site-lang') || 'ar';
 
-/* portfolio data */
-const works = [
-  {title:'تصميم لمطاحن حبات البن', tag:'هوية بصرية', link:'https://www.behance.net/gallery/248943631/_'},
-  {title:'نيو اكاديمي', tag:'هوية تعليمية', link:'https://www.behance.net/gallery/242488055/_'},
-  {title:'B.E. Store', tag:'هوية متجر إلكتروني', link:'https://www.behance.net/gallery/231762911/BE-Store'},
-  {title:'حبات البن', tag:'هوية براند', link:'https://www.behance.net/gallery/231761163/_'},
-  {title:'مشروع تمكن', tag:'هوية مشروع تطويري', link:'https://www.behance.net/gallery/231760097/_'},
-];
-document.getElementById('portfolio-grid').innerHTML = works.map((w,i)=>`
-  <a class="p-card reveal reveal-delay-${(i%4)+1}" href="${w.link}" target="_blank" rel="noopener">
-    <div class="p-bg">${w.title}</div>
-    <div class="p-overlay">
-      <h4>${w.title}</h4>
-      <span>${w.tag}</span>
-      <span class="view">مشاهدة على Behance ↗</span>
-    </div>
-  </a>`).join('');
+function applyLanguage(lang){
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  document.getElementById('langToggleLabel').textContent = lang === 'ar' ? 'EN' : 'AR';
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    el.innerHTML = t(el.dataset.i18n);
+  });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el=>{
+    el.setAttribute('placeholder', t(el.dataset.i18nPh));
+  });
+  renderTicker(); renderSkills(); renderTimeline(); renderEdu();
+  renderPortfolio(); renderVideos(); renderCerts(); renderInfo();
+  localStorage.setItem('site-lang', lang);
+}
 
-/* video data */
-const videos = [
-  {title:'الفيلم القصير', desc:'فيلم قصير من إخراجي بالكامل', link:'https://www.facebook.com/share/p/4KT8ejBD6C9z2cdq/'},
-  {title:'فيلم ٢٤ ساعة', desc:'فيلم وثائقي قصير', link:'https://drive.google.com/file/d/1tVTL8yZMelcyoll1YvpzzbxOqqyhuUYt/view'},
-  {title:'حبات البن', desc:'فيديو ترويجي لمشروع حبات البن', link:'https://www.facebook.com/share/r/1KAD1YyFJK/'},
-];
-document.getElementById('video-grid').innerHTML = videos.map((v,i)=>`
-  <a class="v-card reveal reveal-delay-${(i%4)+1}" href="${v.link}" target="_blank" rel="noopener">
-    <div class="v-thumb"><div class="play-btn">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-    </div></div>
-    <div class="v-body"><h4>${v.title}</h4><p>${v.desc}</p></div>
-  </a>`).join('');
+document.getElementById('langToggle').addEventListener('click', ()=>{
+  applyLanguage(currentLang === 'ar' ? 'en' : 'ar');
+});
 
-/* certificates */
-const certs = [
-  {title:'الشهادات المهنية', desc:'مجموعة من الشهادات في التسويق الرقمي وإنتاج المحتوى', link:'https://drive.google.com/drive/folders/11F7t5NabjepguMxQlREWy7P6HyziWtu5?usp=drive_link'},
-  {title:'ملف الأعمال الكامل', desc:'جميع المشاريع والأعمال على Google Drive', link:'https://drive.google.com/drive/folders/1DF7_XRQm1yi1sH1j15nvZTQQet3ebXuI'},
-];
-document.getElementById('cert-grid').innerHTML = certs.map((c,i)=>`
-  <div class="cert-card reveal reveal-delay-${i+1}">
-    <div class="cert-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.8 7.1 18.2l.9-5.5-4-3.9 5.5-.8z"/></svg></div>
-    <div>
-      <h4>${c.title}</h4>
-      <p>${c.desc}</p>
-      <a href="${c.link}" target="_blank" rel="noopener">فتح الرابط ↗</a>
-    </div>
-  </div>`).join('');
+/* mobile nav toggle */
+const navToggle = document.getElementById('navToggle');
+const navList = document.querySelector('nav ul');
+navToggle.addEventListener('click', ()=>{
+  const isOpen = navList.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+});
+navList.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{
+  navList.classList.remove('open');
+  navToggle.setAttribute('aria-expanded','false');
+}));
 
-/* contact info */
-const infos = [
-  {label:'الموقع', value:'Cairo, Egypt', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.6 7-11.5A7 7 0 0 0 5 9.5C5 14.4 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>'},
-  {label:'الهاتف', value:'01015793576', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>'},
-  {label:'الهاتف', value:'01156766611', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>'},
-  {label:'البريد الإلكتروني', value:'khaled2092002@gmail.com', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>'},
-  {label:'Behance', value:'@2c360170', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6h7.5a3 3 0 0 1 0 6H2z"/><path d="M2 12h8a3.2 3.2 0 0 1 0 6.4H2z"/></svg>'},
-  {label:'LinkedIn', value:'khaled-ahmed', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.97V21H9z"/></svg>'},
-  {label:'السيرة الذاتية', value:'بيت (Bayt.com)', icon:'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7"/></svg>'},
-];
-const infoLinks = {
-  'khaled2092002@gmail.com':'mailto:khaled2092002@gmail.com',
-  '@2c360170':'https://www.behance.net/2c360170',
-  'khaled-ahmed':'https://www.linkedin.com/in/khaled-ahmed-b1917b228/',
-  'بيت (Bayt.com)':'https://www.bayt.com/ar/mycvs/',
-  '01015793576':'tel:01015793576',
-  '01156766611':'tel:01156766611',
-};
-document.getElementById('info-list').innerHTML = infos.map((it,i)=>{
-  const href = infoLinks[it.value];
-  const inner = `<div class="info-icon">${it.icon}</div><div><div class="lbl">${it.label}</div><div class="val">${it.value}</div></div>`;
-  return href ? `<a class="info-item reveal reveal-delay-${(i%4)+1}" href="${href}" target="_blank" rel="noopener">${inner}</a>`
-              : `<div class="info-item reveal reveal-delay-${(i%4)+1}">${inner}</div>`;
-}).join('');
+applyLanguage(currentLang);
 
 /* scroll reveal */
 const io = new IntersectionObserver((entries)=>{
@@ -920,9 +1146,9 @@ const cio = new IntersectionObserver((entries)=>{
       const suffix = el.dataset.suffix || '';
       let cur = 0;
       const step = Math.max(1, Math.round(target/40));
-      const t = setInterval(()=>{
+      const t2 = setInterval(()=>{
         cur += step;
-        if(cur >= target){ cur = target; clearInterval(t); }
+        if(cur >= target){ cur = target; clearInterval(t2); }
         el.textContent = cur + suffix;
       }, 30);
       cio.unobserve(el);
