@@ -1,2 +1,26 @@
-# -https-khaled-ahmed.github.io-portfolio-
-Khaled Ahmed Ibrahim — Digital Marketing &amp; Content Creator Portfolio. A responsive personal portfolio showcasing expertise in social media campaigns, video production, content strategy, graphic design, and brand copywriting. Built with HTML, CSS &amp; JavaScript.   
+# خالد أحمد — بورتوفوليو
+
+موقع شخصي عربي RTL لـ **خالد أحمد إبراهيم** — مسوّق رقمي وصانع محتوى.
+
+## المحتوى
+- قسم رئيسي (Hero) مع شرائط المهارات
+- نبذة عنّي مع عدادات تفاعلية
+- الخبرات المهنية
+- المهارات
+- معرض الأعمال (Behance)
+- مشاريع تطوير الويب
+- أعمال الفيديو
+- الشهادات
+- نموذج تواصل (FormSubmit)
+
+## التقنيات
+HTML · CSS · JavaScript نقي — بدون أي مكتبات خارجية.
+
+## النشر
+يُقدَّم عبر **GitHub Pages** تلقائيًا من الفرع `main`.
+الموقع: https://khaled2092002-alt.github.io/-https-khaled-ahmed.github.io-portfolio-/
+
+## ملاحظات تطويرية
+- الصور مستضافة محليًا في `assets/` (بدل base64) لتحسين الأداء والـ SEO.
+- شارات Open Graph + JSON-LD مضافة للمشاركة على المنصات.
+- زر "العودة للأعلى" + دعم `prefers-reduced-motion`.
