@@ -777,6 +777,62 @@
   <div class="timeline" id="edu-timeline"></div>
 </section>
 
+<section id="comments" class="ucom-section">
+  <style>
+    .ucom-section{
+      --ucom-bg:#0d1117;
+      --ucom-panel:#141a23;
+      --ucom-border:#232c38;
+      --ucom-text:#eef1f5;
+      --ucom-muted:#8b95a5;
+      --ucom-accent:#e8b34d;
+      --ucom-accent-soft:rgba(232,179,77,.12);
+      background:var(--ucom-bg);
+      color:var(--ucom-text);
+      padding:96px 24px;
+      direction:rtl;
+      font-family:'Tajawal','Cairo',sans-serif;
+    }
+    .ucom-section *{box-sizing:border-box;}
+    .ucom-inner{max-width:1080px;margin:0 auto;}
+    .ucom-eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:13px;letter-spacing:.04em;
+      color:var(--ucom-accent);
+      background:var(--ucom-accent-soft);
+      border:1px solid rgba(232,179,77,.25);
+      padding:6px 14px;border-radius:20px;
+      margin-bottom:20px;
+    }
+    .ucom-title{font-size:clamp(28px,4vw,40px);font-weight:800;margin:0 0 14px;line-height:1.3;}
+    .ucom-sub{color:var(--ucom-muted);font-size:16px;line-height:1.9;max-width:640px;margin:0 0 40px;}
+    .ucom-box{
+      background:var(--ucom-panel);
+      border:1px solid var(--ucom-border);
+      border-radius:14px;
+      padding:28px;
+      min-height:220px;
+    }
+    .ucom-box .utterances{margin:0;max-width:none;}
+    @media (max-width:640px){.ucom-section{padding:64px 16px;} .ucom-box{padding:18px;}}
+  </style>
+
+  <div class="ucom-inner">
+    <span class="ucom-eyebrow" data-i18n="comments.eyebrow">💬 الكومنتات</span>
+    <h2 class="ucom-title" data-i18n="comments.title">اكتب رأيك أو سؤالك</h2>
+    <p class="ucom-sub" data-i18n="comments.sub">ممكن تكتب كومنت على أي مشروع أو أي استفسار، وهتظهر هنا مباشرة للجميع.</p>
+    <div class="ucom-box">
+      <script src="https://utteranc.es/client.js"
+              repo="khaled2092002-alt/-https-khaled-ahmed.github.io-portfolio-"
+              issue-term="pathname"
+              theme="github-dark"
+              crossorigin="anonymous"
+              async>
+      </script>
+    </div>
+  </div>
+</section>
+
 <section id="contact">
   <div class="contact-grid">
     <div class="reveal">
@@ -863,6 +919,7 @@ const i18n = {
     'video.eyebrow':'إنتاج الفيديو','video.title':'أعمالي في الفيديو','video.sub':'أعمالي في إنتاج وتصوير الفيديو والأفلام القصيرة',
     'certs.eyebrow':'التوثيق','certs.title':'الشهادات والمؤهلات','certs.sub':'شهادات ومصادر توثّق مسيرتي المهنية',
     'edu.eyebrow':'التعليم','edu.title':'المؤهل الدراسي','edu.sub':'الخلفية الأكاديمية اللي بنيت عليها مسيرتي المهنية',
+    'comments.eyebrow':'💬 الكومنتات','comments.title':'اكتب رأيك أو سؤالك','comments.sub':'ممكن تكتب كومنت على أي مشروع أو أي استفسار، وهتظهر هنا مباشرة للجميع.',
     'contact.eyebrow':'لنبدأ مشروعك','contact.title':'تواصل معي','contact.desc':'مهتم بالتعاون أو عندك مشروع؟ متاح للعمل بدوام كامل والفريلانس. تواصل معي عبر القنوات التالية:',
     'contact.name':'الاسم','contact.namePh':'اسمك','contact.email':'البريد الإلكتروني','contact.subject':'الموضوع','contact.subjectPh':'عن ماذا تريد التحدث؟',
     'contact.message':'الرسالة','contact.messagePh':'اكتب رسالتك هنا...','contact.send':'إرسال الرسالة','contact.note':'ابعت وهرد عليك في اقرب وقت.',
@@ -893,6 +950,7 @@ const i18n = {
     'video.eyebrow':'Video Production','video.title':'My Video Work','video.sub':'Video production and short-film work I&#39;ve directed and shot',
     'certs.eyebrow':'Credentials','certs.title':'Certificates & Qualifications','certs.sub':'Certificates and sources documenting my professional journey',
     'edu.eyebrow':'Education','edu.title':'Academic Background','edu.sub':'The academic foundation my career is built on',
+    'comments.eyebrow':'💬 Comments','comments.title':'Share your feedback','comments.sub':'You can comment on any project or ask a question, and it will appear here for everyone.',
     'contact.eyebrow':'Let&#39;s start your project','contact.title':'Get in Touch','contact.desc':'Interested in collaborating or have a project in mind? Open to full-time and freelance work. Reach me through the channels below:',
     'contact.name':'Name','contact.namePh':'Your name','contact.email':'Email','contact.subject':'Subject','contact.subjectPh':'What would you like to discuss?',
     'contact.message':'Message','contact.messagePh':'Write your message here...','contact.send':'Send Message','contact.note':'Send it and I&#39;ll get back to you as soon as possible.',
